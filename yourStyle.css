@@ -1,0 +1,142 @@
+/* TODO : CSS파일을 편집하여 원하는 스타일의 계산기를 만들어보세요 :) */
+
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  box-sizing: border-box;
+  /*font-family: 'Righteous', cursive; */
+  font-family: '고딕';
+  font-weight: bold;
+  color: #000;
+}
+
+body {
+  /*background-image: url('./data/codestates-motif.png');*/
+  background-image: url('https://i.pinimg.com/originals/ca/31/38/ca31385cf78d1385ff6080bbb69e24a4.jpg');
+}
+
+/*
+  Calculator styles
+*/
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: #113a5c;
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+
+.calculator__display--bare {
+ display: none; 
+  background-color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 25px 15px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.calculator__display--bare > span {
+ display: inline-block; 
+  text-align: center;
+  background-color: #f0f7fc;
+  margin: 5px;
+  width: 40px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 5px;
+}
+
+.calculator__display--for-advanced {
+  background-color: #c3ddd5;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: right;
+  vertical-align: middle;
+  padding: 25px 15px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.calculator__buttons {
+  background-color: #e4e4e4;
+  width: 100%;
+  height: 330px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.clear__and__enter {
+  height: 50px;
+  margin: 10px;
+  background-color: #e4e4e4;
+}
+
+.clear__and__enter > button {
+  border-radius: 10px;
+  width: 122px;
+  height: 50px;
+  margin: 0px 5px;
+  background-color: #e45b51;
+  cursor: pointer;
+  outline: none;
+}
+
+.button__row {
+/*display : flex; /* 가운데 정렬해서 ac, enter랑 맞추고 싶당 근데 이게 아닌가봐...*/
+  height: 50px;
+  margin: 10px;
+  background-color: #e4e4e4;
+}
+
+.button__row > button {
+/*	
+	justify-content: center;
+	align-items : center; 
+*/
+  width: 64px;
+  height: 50px;
+  border-radius: 10px;
+
+  cursor: pointer;
+  outline: none;
+  background-color: #bdbbbb;
+}
+
+.button__row > .operator {
+  color: #ffffff;
+  background-color: #313132;
+}
+
+.button__row > .double {
+  width: 132px;
+}
+
+.button__row > .isPressed {
+  background-color: #e45b51;
+}
+
+.logo {
+  position: fixed;
+  padding: 30px;
+  bottom: 0px;
+  right: 0px;
+}
